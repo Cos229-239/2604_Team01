@@ -4,6 +4,7 @@ Start here. Keep this README updated with your team name, members, and a short p
 
 # Team Members
 - Joseph Davis
+- Jacob Walters
 
 Prototype pages:
 
