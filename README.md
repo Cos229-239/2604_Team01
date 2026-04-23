@@ -6,6 +6,7 @@ Start here. Keep this README updated with your team name, members, and a short p
 - Joseph Davis
 - Jacob Walters
 - Malik George
+- Jeremiah Geigenmillers
 Prototype pages:
 
 - `index.html` - roster editor prototype landing page
