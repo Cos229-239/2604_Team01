@@ -10,10 +10,8 @@
     "timestamp": true
   },
   "branches": {
-    "main": false,
-    "gh-pages": false,
-    "dev": true,
-    "PatrickPersonal": false
+    "main": true,
+    "gh-pages": false
   },
   "version": 1
 }
