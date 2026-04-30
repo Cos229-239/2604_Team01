@@ -8,6 +8,7 @@ Start here. Keep this README updated with your team name, members, and a short p
 - Malik George
 - Jeremiah Geigenmillers
 - Christopher Bivins
+
 Prototype pages:
 
 - `index.html` - roster editor prototype landing page
