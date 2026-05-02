@@ -11,7 +11,21 @@ data class CharacterClass (
 val barbarian = CharacterClass(
     name = "Barbarian",
     hitDie = 12,
+    primaryAbility = "Strength",
+    savingThrows = listOf("Strength", "Constitution"),
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+)
+
+val bard = CharacterClass(
+    name = "Bard",
+    hitDie = 8,
     primaryAbility = "charisma",
-    savingThrows = listof("Dexterity", "Charisma"),
-    weaponProficiencies = listof("Simple Weapons", "Martial Weapons")
+    savingThrows = listOf("Dexterity", "Charisma"),
+    weaponProficiencies = listOf(
+        "Simple Weapons",
+        "Hand Crossbows",
+        "Longswords",
+        "Rapiers",
+        "Shortswords"
+    )
 )
