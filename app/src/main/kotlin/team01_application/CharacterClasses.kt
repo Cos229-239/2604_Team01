@@ -19,13 +19,15 @@ val barbarian = CharacterClass(
 val bard = CharacterClass(
     name = "Bard",
     hitDie = 8,
-    primaryAbility = "charisma",
+    primaryAbility = "Charisma",
     savingThrows = listOf("Dexterity", "Charisma"),
-    weaponProficiencies = listOf(
-        "Simple Weapons",
-        "Hand Crossbows",
-        "Longswords",
-        "Rapiers",
-        "Shortswords"
-    )
+    weaponProficiencies = listOf("Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords")
+)
+
+val cleric = CharacterClass(
+    name = "Cleric",
+    hitDie = 8,
+    primaryAbility = "Wisdom",
+    savingThrows = listOf("Wisdom", "Charisma"),
+    weaponProficiencies = listOf("Simple Weapons")
 )
