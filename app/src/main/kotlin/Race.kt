@@ -1,8 +1,8 @@
 data class Race(
-    val name: String = "",
-    val description: String = "",
-    val background: String = "",
-    val traits: String = "",
+    val name: String,
+    val description: String,
+    val background: String,
+    val traits: String,
 )
 
 // elf
@@ -33,3 +33,41 @@ val elfRace = Race(
     traits = elfTraits
 )
 
+// Dwarf
+
+val dwarfDescription: String = """
+    Dwarves are known for their deep connection to stone and the mountains. 
+    They are resilient and enduring beings, often living up to 350 years. 
+    Their strength, discipline, and craftsmanship define their way of life, making them one of the most steadfast races.
+    """.trimIndent()
+
+val dwarfBackground: String = """
+    Dwarves were brought into the world by the forge god Moradin. According to legend, 
+    Moradin shaped them in his own image from stone, metal, and precious gems, then breathed life into them. 
+    While Moradin remains their primary deity, many dwarves also revere other gods such as Abbathor and Berronar Truesilver.
+    
+    Dwarven society is built upon exceptional craftsmanship and patience. 
+    They are known to spend generations carving vast cities and strongholds deep within mountains. 
+    Once completed, these structures can endure for thousands of years. 
+    Their mastery of stonework and mining has also made them incredibly wealthy, as they uncover and refine the riches hidden within the earth.
+    
+    Though dwarves typically stand around four feet tall, they are powerfully built, with broad frames and remarkable physical strength. 
+    Their thick beards and rugged features are often seen as symbols of pride and tradition within their culture.
+""".trimIndent()
+
+val dwarfTraits: String = """
+    Type: Humanoid
+    Size: 4-5ft
+    Speed: 30ft
+""".trimIndent()
+
+val dwarfRace = Race(
+    name = "Dwarf",
+    description = dwarfDescription,
+    background = dwarfBackground,
+    traits = dwarfTraits
+)
+
+// race list
+
+val raceList = listOf(elfRace, dwarfRace)
