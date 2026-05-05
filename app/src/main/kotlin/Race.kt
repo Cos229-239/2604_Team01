@@ -68,6 +68,62 @@ val dwarfRace = Race(
     traits = dwarfTraits
 )
 
+// Dragonborn
+
+val dragonBornDescription: String = """
+    Dragonborn are a noble and proud race that is shaped by their draconic heritage. 
+    """.trimIndent()
+
+val dragonBornBackground: String = """
+    Dragonborn hatched from dragon eggs. 
+    According to the lore, these eggs were blessed by dragon gods Bahamut and Tiamat, or created by non-divine dragons. 
+    
+    The dragonborn’s culture is built on honor and discipline. The worst offense you could commit is breaking your word.
+    
+    The majority of Dragonborn society in the nation of Tymanther have a strong hatred of dragons. 
+    Despite this, they were known to tolerate all kinds of races--even those who are generally disliked. 
+""".trimIndent()
+
+val dragonBornTraits: String = """
+    Type: Humanoid
+    Size: 5-7ft
+    Speed: 30ft
+""".trimIndent()
+
+val dragonBornRace = Race(
+    name = "Dragonborn",
+    description = dragonBornDescription,
+    background = dragonBornBackground,
+    traits = dragonBornTraits
+)
+
+// human race
+
+val humanDescription: String = """
+    Humans are ambitious and versatile, driven by the brevity of their lives to achieve as much as possible. 
+""".trimIndent()
+
+val humanBackground: String = """
+    With lifespans far shorter than elves, dwarves, or other long-lived races,
+    humans feel an urgency to make their mark on the world before their time runs out. 
+    They build cities in decades and push the boundaries of exploration and invention.
+    
+    Humans can be found in every climate and culture, from desert nomads and seafaring traders to imperial nobles and frontier settlers. 
+    They adapt quickly to new environments, often blending traditions from other peoples into their own. 
+""".trimIndent()
+
+val humanTraits: String = """
+    Type: Humanoid
+    Size: 5-6ft
+    Speed: 30ft
+""".trimIndent()
+
+val humanRace = Race(
+    name = "Human",
+    description = humanDescription,
+    background = humanBackground,
+    traits = humanTraits)
+
 // race list
 
-val raceList = listOf(elfRace, dwarfRace)
+val raceList = listOf(elfRace, dwarfRace, dragonBornRace, humanRace)
