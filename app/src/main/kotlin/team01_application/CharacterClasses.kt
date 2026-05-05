@@ -31,3 +31,29 @@ val cleric = CharacterClass(
     savingThrows = listOf("Wisdom", "Charisma"),
     weaponProficiencies = listOf("Simple Weapons")
 )
+
+val druid = CharacterClass(
+    name = "Druid",
+    hitDie = 8,
+    primaryAbility = "Wisdom",
+    savingThrows = listOf("Intelligence", "Wisdom"),
+    weaponProficiencies = listOf("Clubs", "Daggers", "Darts", "Javelins", "Maces", "Quarterstaffs", "Scimitars", "Sickles", "Slings", "Spears")
+)
+
+val fighter = CharacterClass(
+    name = "Fighter",
+    hitDie = 10,
+    primaryAbility = "Strength/Dexterity",
+    savingThrows = listOf("Strength" , "Constitution"),
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+)
+
+val paladin = CharacterClass(
+    name = "Paladin",
+    hitDie = 10,
+    primaryAbility = "Strength/Charisma",
+    savingThrows = listOf("Wisdom", "Charisma"),
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+)
+
+val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)
