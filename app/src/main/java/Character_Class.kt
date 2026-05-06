@@ -1,8 +1,15 @@
-data class Character_Class(
-    val ch_Name: String,
-    val ch_Level: Int,
-    val ch_Race: Race,
-    val ch_Class: CharClass,
-    val ch_Ability_Scores: Map<String, Int>,
-    val ch_Inventory: List<InventoryItem> = emptyList()
+data class Character(
+
+    // ----- Character Information --------
+    val ch_Name: String? = null,
+    val ch_Level: Int? = null,
+    val ch_Race: Race? = null,
+    val ch_Class: CharClass? = null,
+    val ch_Ability_Scores: MutableMap<String, Int>? = mutableMapOf(),
+    val ch_Inventory: MutableList<InventoryItem> = mutableListOf()
 )
+{
+    val isComplete: Boolean
+        get() = ch_Race != null && ch_Class != null && ch_Inventory.isNotEmpty()
+
+}
