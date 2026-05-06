@@ -9,24 +9,20 @@ data class Campaign(
     val createdAt: Long = System.currentTimeMillis(),
     val playerUserIds: MutableList<String> = mutableListOf()
 ) {
-    // Secondary constructor for Firebase / serialization
-    constructor() : this(
-        campaignId = "",
-        dmUserId = "",
-        campaignName = "",
-        description = "",
-        worldSetting = null,
-        createdAt = System.currentTimeMillis(),
-        playerUserIds = mutableListOf()
-    )
+    constructor() : this("", "", "", "", null, System.currentTimeMillis(), mutableListOf())
 
+    // Add a player to this campaign
     fun addPlayer(userId: String) {
         if (!playerUserIds.contains(userId)) {
             playerUserIds.add(userId)
         }
     }
 
+    // Remove a player from this campaign
     fun removePlayer(userId: String) {
         playerUserIds.remove(userId)
     }
+
+    // Check if a user is the Dungeon Master of this campaign
+    fun isDM(userId: String): Boolean = dmUserId == userId
 }
