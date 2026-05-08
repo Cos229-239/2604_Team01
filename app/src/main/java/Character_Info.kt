@@ -16,3 +16,5 @@ interface InventoryItem {
     val i_AC: Int? = null
     val i_Damage: List<Int>? = null
 }
+
+enum class Attribute { STR, DEX, CON, INT, WIS, CHA }

@@ -5,7 +5,7 @@ data class Character(
     val ch_Level: Int? = null,
     val ch_Race: Race? = null,
     val ch_Class: CharClass? = null,
-    val ch_Ability_Scores: MutableMap<String, Int>? = mutableMapOf(),
+    val ch_Ability_Scores: MutableMap<Attribute, Int>? = mutableMapOf(),
     val ch_Inventory: MutableList<InventoryItem> = mutableListOf()
 )
 {
