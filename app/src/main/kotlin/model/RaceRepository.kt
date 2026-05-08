@@ -1,16 +1,13 @@
-data class Race(
-    val name: String,
-    val description: String,
-    val background: String,
-    val traits: String,
-)
+package model
 
-// elf
-val elfDescription: String = """
+class RaceRepository {
+
+    // elf
+    val elfDescription: String = """
     Elves are as curious as they are long-lived. 
     They are divided into groups such as Drow, High Elves, and Wood Elves.
     """.trimIndent()
-val elfBackground: String = """
+    val elfBackground: String = """
     Originating from the god Corellon, elves were once shapeshifters. 
     Inspired by the deity Lolth, they attempted to dethrone him but were defeated and lost their ability to change form.
     
@@ -20,28 +17,28 @@ val elfBackground: String = """
     Elves can live up to 750 years and are recognized by their pointed ears and lack of facial or body hair. 
     Their appearance is influenced by the environments they inhabit, which can also shape their abilities over time.
 """.trimIndent()
-val elfTraits: String = """
+    val elfTraits: String = """
     Type: Humanoid
     Size: 6ft
     Speed: 30ft
 """.trimIndent()
 
-val elfRace = Race(
-    name = "Elf",
-    description = elfDescription,
-    background = elfBackground,
-    traits = elfTraits
-)
+    val elfRace = Race(
+        name = "Elf",
+        description = elfDescription,
+        background = elfBackground,
+        traits = elfTraits
+    )
 
 // Dwarf
 
-val dwarfDescription: String = """
+    val dwarfDescription: String = """
     Dwarves are known for their deep connection to stone and the mountains. 
     They are resilient and enduring beings, often living up to 350 years. 
     Their strength, discipline, and craftsmanship define their way of life, making them one of the most steadfast races.
     """.trimIndent()
 
-val dwarfBackground: String = """
+    val dwarfBackground: String = """
     Dwarves were brought into the world by the forge god Moradin. According to legend, 
     Moradin shaped them in his own image from stone, metal, and precious gems, then breathed life into them. 
     While Moradin remains their primary deity, many dwarves also revere other gods such as Abbathor and Berronar Truesilver.
@@ -55,26 +52,26 @@ val dwarfBackground: String = """
     Their thick beards and rugged features are often seen as symbols of pride and tradition within their culture.
 """.trimIndent()
 
-val dwarfTraits: String = """
+    val dwarfTraits: String = """
     Type: Humanoid
     Size: 4-5ft
     Speed: 30ft
 """.trimIndent()
 
-val dwarfRace = Race(
-    name = "Dwarf",
-    description = dwarfDescription,
-    background = dwarfBackground,
-    traits = dwarfTraits
-)
+    val dwarfRace = Race(
+        name = "Dwarf",
+        description = dwarfDescription,
+        background = dwarfBackground,
+        traits = dwarfTraits
+    )
 
 // Dragonborn
 
-val dragonBornDescription: String = """
+    val dragonBornDescription: String = """
     Dragonborn are a noble and proud race that is shaped by their draconic heritage. 
     """.trimIndent()
 
-val dragonBornBackground: String = """
+    val dragonBornBackground: String = """
     Dragonborn hatched from dragon eggs. 
     According to the lore, these eggs were blessed by dragon gods Bahamut and Tiamat, or created by non-divine dragons. 
     
@@ -84,26 +81,26 @@ val dragonBornBackground: String = """
     Despite this, they were known to tolerate all kinds of races--even those who are generally disliked. 
 """.trimIndent()
 
-val dragonBornTraits: String = """
+    val dragonBornTraits: String = """
     Type: Humanoid
     Size: 5-7ft
     Speed: 30ft
 """.trimIndent()
 
-val dragonBornRace = Race(
-    name = "Dragonborn",
-    description = dragonBornDescription,
-    background = dragonBornBackground,
-    traits = dragonBornTraits
-)
+    val dragonBornRace = Race(
+        name = "Dragonborn",
+        description = dragonBornDescription,
+        background = dragonBornBackground,
+        traits = dragonBornTraits
+    )
 
 // human race
 
-val humanDescription: String = """
+    val humanDescription: String = """
     Humans are ambitious and versatile, driven by the brevity of their lives to achieve as much as possible. 
 """.trimIndent()
 
-val humanBackground: String = """
+    val humanBackground: String = """
     With lifespans far shorter than elves, dwarves, or other long-lived races,
     humans feel an urgency to make their mark on the world before their time runs out. 
     They build cities in decades and push the boundaries of exploration and invention.
@@ -112,18 +109,53 @@ val humanBackground: String = """
     They adapt quickly to new environments, often blending traditions from other peoples into their own. 
 """.trimIndent()
 
-val humanTraits: String = """
+    val humanTraits: String = """
     Type: Humanoid
     Size: 5-6ft
     Speed: 30ft
 """.trimIndent()
 
-val humanRace = Race(
-    name = "Human",
-    description = humanDescription,
-    background = humanBackground,
-    traits = humanTraits)
+    val humanRace = Race(
+        name = "Human",
+        description = humanDescription,
+        background = humanBackground,
+        traits = humanTraits)
 
 // race list
 
-val raceList = listOf(elfRace, dwarfRace, dragonBornRace, humanRace)
+    val raceList = listOf(elfRace, dwarfRace, dragonBornRace, humanRace)
+
+    val raceMap: Map<String, Race> = mapOf(
+        "elf" to elfRace,
+        "dwarf" to dwarfRace,
+        "dragon" to dragonBornRace,
+        "human" to humanRace)
+
+
+    // returns a specified race object
+    fun getRaceByName(raceName: String): Race?
+    {
+        if (raceMap.containsKey(raceName))
+        {
+            val raceValue: Race? = raceMap[raceName]
+            return raceValue
+        }
+        else
+        {
+            return null
+        }
+    }
+
+    // returns the list of all race objects
+    fun getAllRaces(): List<Race>
+    {
+        return raceList
+    }
+
+    // returns the names of each race
+    fun getRaceNames(): List<String>
+    {
+        return listOf(elfRace.name, dwarfRace.name, dragonBornRace.name, humanRace.name)
+    }
+
+}
