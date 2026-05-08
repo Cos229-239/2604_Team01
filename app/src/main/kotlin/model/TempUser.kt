@@ -1,6 +1,6 @@
 package com.example.team01_application.model
 
-data class User(
+data class TempUser(
     val userId: String = "",
     val username: String = "",
     val email: String = "",

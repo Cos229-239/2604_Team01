@@ -16,7 +16,7 @@ class FriendManager {
     }
 
     // Get list of friends for a user
-    fun getFriends(userId: String): List<User> {
+    fun getFriends(userId: String): List<TempUser> {
         // TODO: Return actual friends
         return emptyList()
     }
