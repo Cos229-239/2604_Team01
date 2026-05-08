@@ -1,5 +1,6 @@
 package com.example.team01_application.model
 
+// Updated for Week 1 Git assignment
 data class TempUser(
     val userId: String = "",
     val username: String = "",
