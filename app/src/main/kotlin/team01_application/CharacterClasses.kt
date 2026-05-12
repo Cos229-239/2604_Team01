@@ -57,3 +57,9 @@ val paladin = CharacterClass(
 )
 
 val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)
+
+fun getClassByName(name: String): CharacterClass?{
+    return allClasses.find {
+        it.name.equals(name, ignoreCase = true)
+    }
+}
