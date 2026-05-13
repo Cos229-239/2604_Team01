@@ -23,6 +23,5 @@ data class Campaign(
         playerUserIds.remove(userId)
     }
 
-    // Check if a user is the Dungeon Master of this campaign
-    fun isDM(userId: String): Boolean = dmUserId == userId
-}
+    // Check if a user is the Dungeon Master
+    fun isDM(userId: String): Boolean = dmUserId == userId}
