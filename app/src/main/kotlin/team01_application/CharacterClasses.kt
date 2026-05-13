@@ -51,8 +51,8 @@ val fighter = CharacterClass(
 val paladin = CharacterClass(
     name = "Paladin",
     hitDie = 10,
-    primaryAbility = "Strength/Charisma",
-    savingThrows = listOf("Wisdom", "Charisma"),
+    primaryAbility = "Strength/Charisma/Wisdom",
+    savingThrows = listOf("Wisdom","Strength","Charisma"),
     weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
 )
 
