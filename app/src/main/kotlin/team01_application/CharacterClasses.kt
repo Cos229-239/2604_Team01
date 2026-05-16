@@ -1,4 +1,4 @@
-package team01_application
+package com.example.team01_application
 
 data class CharacterClass (
     val name: String,
