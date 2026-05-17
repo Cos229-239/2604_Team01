@@ -1,6 +1,10 @@
+package Character_Creator
+
+import kotlin.random.Random
+
 object Random_Calculator {
 
-    private val rng = kotlin.random.Random.Default
+    private val rng = Random.Default
 
     // --------------------- Roll 4 d 6 and drop the lowest ------------------------
     fun roll_Ability_Score(): Int = (1..4).map { rng.nextInt(1, 7)}.sorted().takeLast(3).sum()

@@ -1,4 +1,4 @@
-package team01_application
+package com.example.team01_application
 
 data class CharacterClass (
     val name: String,
@@ -51,9 +51,15 @@ val fighter = CharacterClass(
 val paladin = CharacterClass(
     name = "Paladin",
     hitDie = 10,
-    primaryAbility = "Strength/Charisma",
-    savingThrows = listOf("Wisdom", "Charisma"),
+    primaryAbility = "Strength/Charisma/Wisdom",
+    savingThrows = listOf("Wisdom","Strength","Charisma"),
     weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
 )
 
 val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)
+
+fun getClassByName(name: String): CharacterClass?{
+    return allClasses.find {
+        it.name.equals(name, ignoreCase = true)
+    }
+}
