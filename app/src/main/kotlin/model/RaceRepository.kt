@@ -8,14 +8,11 @@ class RaceRepository {
     They are divided into groups such as Drow, High Elves, and Wood Elves.
     """.trimIndent()
     val elfBackground: String = """
-    Originating from the god Corellon, elves were once shapeshifters. 
-    Inspired by the deity Lolth, they attempted to dethrone him but were defeated and lost their ability to change form.
+    Originating from the god Corellon, elves were once shapeshifters. Inspired by the deity Lolth, they attempted to dethrone him but were defeated and lost their ability to change form.
     
-    Without this power, elves were overwhelmed with sorrow and despair. Driven by both emotion and curiosity, many relocated to the Feywild. 
-    However, this feeling of despair only intensified in this new realm, causing many to seek other places to survive.
+    Without this power, elves were overwhelmed with sorrow and despair. Driven by both emotion and curiosity, many relocated to the Feywild. However, this feeling of despair only intensified in this new realm, causing many to seek other places to survive.
     
-    Elves can live up to 750 years and are recognized by their pointed ears and lack of facial or body hair. 
-    Their appearance is influenced by the environments they inhabit, which can also shape their abilities over time.
+    Elves can live up to 750 years and are recognized by their pointed ears and lack of facial or body hair. Their appearance is influenced by the environments they inhabit, which can also shape their abilities over time.
 """.trimIndent()
     val elfTraits: String = """
     Type: Humanoid
@@ -33,23 +30,15 @@ class RaceRepository {
 // Dwarf
 
     val dwarfDescription: String = """
-    Dwarves are known for their deep connection to stone and the mountains. 
-    They are resilient and enduring beings, often living up to 350 years. 
-    Their strength, discipline, and craftsmanship define their way of life, making them one of the most steadfast races.
+    Dwarves are known for their deep connection to stone and the mountains. They are resilient and enduring beings, often living up to 350 years.
     """.trimIndent()
 
     val dwarfBackground: String = """
-    Dwarves were brought into the world by the forge god Moradin. According to legend, 
-    Moradin shaped them in his own image from stone, metal, and precious gems, then breathed life into them. 
-    While Moradin remains their primary deity, many dwarves also revere other gods such as Abbathor and Berronar Truesilver.
+    Dwarves were brought into the world by the forge god Moradin. According to legend, Moradin shaped them in his own image from stone, metal, and precious gems, then breathed life into them. 
     
-    Dwarven society is built upon exceptional craftsmanship and patience. 
-    They are known to spend generations carving vast cities and strongholds deep within mountains. 
-    Once completed, these structures can endure for thousands of years. 
-    Their mastery of stonework and mining has also made them incredibly wealthy, as they uncover and refine the riches hidden within the earth.
+    Dwarven society is built upon exceptional craftsmanship and patience. They are known to spend generations carving vast cities and strongholds deep within mountains. Once completed, these structures can endure for thousands of years. 
     
-    Though dwarves typically stand around four feet tall, they are powerfully built, with broad frames and remarkable physical strength. 
-    Their thick beards and rugged features are often seen as symbols of pride and tradition within their culture.
+    Though dwarves typically stand around four feet tall, they are powerfully built, with broad frames and remarkable physical strength. Their thick beards and rugged features are often seen as symbols of pride and tradition within their culture.
 """.trimIndent()
 
     val dwarfTraits: String = """
@@ -101,12 +90,9 @@ class RaceRepository {
 """.trimIndent()
 
     val humanBackground: String = """
-    With lifespans far shorter than elves, dwarves, or other long-lived races,
-    humans feel an urgency to make their mark on the world before their time runs out. 
-    They build cities in decades and push the boundaries of exploration and invention.
+    With lifespans far shorter than elves, dwarves, or other long-lived races, humans feel an urgency to make their mark on the world before their time runs out. They build cities in decades and push the boundaries of exploration and invention.
     
-    Humans can be found in every climate and culture, from desert nomads and seafaring traders to imperial nobles and frontier settlers. 
-    They adapt quickly to new environments, often blending traditions from other peoples into their own. 
+    Humans can be found in every climate and culture, from desert nomads and seafaring traders to imperial nobles and frontier settlers. They adapt quickly to new environments, often blending traditions from other peoples into their own. 
 """.trimIndent()
 
     val humanTraits: String = """
