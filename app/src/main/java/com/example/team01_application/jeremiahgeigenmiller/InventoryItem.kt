@@ -5,5 +5,6 @@ data class InventoryItem(
     val name: String = "",
     val type: String = "",
     val description: String = "",
-    val quantity: Int = 1
+    val quantity: Int = 1,
+    val isStartingItem: Boolean = false
 )
