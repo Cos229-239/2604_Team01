@@ -5,7 +5,8 @@ data class CharacterClass (
     val hitDie: Int,
     val primaryAbility: String,
     val savingThrows: List<String>,
-    val weaponProficiencies: List<String>
+    val weaponProficiencies: List<String>,
+    val description: String
 )
 
 val barbarian = CharacterClass(
@@ -13,7 +14,8 @@ val barbarian = CharacterClass(
     hitDie = 12,
     primaryAbility = "Strength",
     savingThrows = listOf("Strength", "Constitution"),
-    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons") ,
+    description = "A fierce melee warrior who uses rage and brute strength to overpower enemies."
 )
 
 val bard = CharacterClass(
@@ -21,7 +23,8 @@ val bard = CharacterClass(
     hitDie = 8,
     primaryAbility = "Charisma",
     savingThrows = listOf("Dexterity", "Charisma"),
-    weaponProficiencies = listOf("Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords")
+    weaponProficiencies = listOf("Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"),
+    description = "A charismatic performer who uses music, magic, and inspiration to support allies."
 )
 
 val cleric = CharacterClass(
@@ -29,7 +32,8 @@ val cleric = CharacterClass(
     hitDie = 8,
     primaryAbility = "Wisdom",
     savingThrows = listOf("Wisdom", "Charisma"),
-    weaponProficiencies = listOf("Simple Weapons")
+    weaponProficiencies = listOf("Simple Weapons"),
+    description = "A divine spellcaster who heals allies and channels the power of their deity."
 )
 
 val druid = CharacterClass(
@@ -37,7 +41,8 @@ val druid = CharacterClass(
     hitDie = 8,
     primaryAbility = "Wisdom",
     savingThrows = listOf("Intelligence", "Wisdom"),
-    weaponProficiencies = listOf("Clubs", "Daggers", "Darts", "Javelins", "Maces", "Quarterstaffs", "Scimitars", "Sickles", "Slings", "Spears")
+    weaponProficiencies = listOf("Clubs", "Daggers", "Darts", "Javelins", "Maces", "Quarterstaffs", "Scimitars", "Sickles", "Slings", "Spears"),
+    description = "A nature-based spellcaster who can wield elemental magic and transform into animals."
 )
 
 val fighter = CharacterClass(
@@ -45,7 +50,8 @@ val fighter = CharacterClass(
     hitDie = 10,
     primaryAbility = "Strength/Dexterity",
     savingThrows = listOf("Strength" , "Constitution"),
-    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons"),
+    description = "A skilled combat specialist who excels with weapons, armor, and battlefield tactics."
 )
 
 val paladin = CharacterClass(
@@ -53,7 +59,8 @@ val paladin = CharacterClass(
     hitDie = 10,
     primaryAbility = "Strength/Charisma/Wisdom",
     savingThrows = listOf("Wisdom","Strength","Charisma"),
-    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons")
+    weaponProficiencies = listOf("Simple Weapons", "Martial Weapons"),
+    description = "A holy warrior who combines powerful melee combat with divine magic and protection."
 )
 
 val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)

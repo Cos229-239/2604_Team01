@@ -21,8 +21,8 @@ class CharacterClassesFragment : Fragment() {
             false
         )
 
-        val classText = allClasses.joinToString("\n") {
-            it.name
+        val classText = allClasses.joinToString("\n\n") {
+            "${it.name}\n${it.description}"
         }
 
         view.findViewById<TextView>(R.id.classTextView).text = classText
