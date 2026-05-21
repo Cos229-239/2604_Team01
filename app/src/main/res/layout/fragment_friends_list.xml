@@ -8,16 +8,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/my_campaigns"
+        android:text="@string/my_friends"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"/>
 
     <TextView
-        android:id="@+id/tv_campaign_status"
+        android:id="@+id/tv_friends_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/loading_campaigns"
+        android:text="@string/loading_friends"
         android:textAlignment="center"
         android:padding="32dp"/>
 
