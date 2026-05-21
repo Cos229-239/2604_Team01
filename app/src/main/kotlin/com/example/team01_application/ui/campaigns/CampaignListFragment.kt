@@ -19,7 +19,6 @@ class CampaignListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout manually
         return inflater.inflate(R.layout.fragment_campaign_list, container, false)
     }
 
@@ -35,7 +34,7 @@ class CampaignListFragment : Fragment() {
 
         val campaigns = campaignManager.getMyCampaigns(currentUserId)
 
-        statusText.text = "Loaded ${campaigns.size} campaigns"
-        println("✅ Loaded ${campaigns.size} campaigns")
+        // Fixed: Using string resource
+        statusText.text = getString(R.string.campaigns_loaded, campaigns.size)
     }
 }

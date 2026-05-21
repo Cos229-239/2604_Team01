@@ -5,4 +5,11 @@
     <string name="my_friends">My Friends</string>
     <string name="loading_friends">Loading friends…</string>
     <string name="friends_count">You have %d friends</string>
+    <string name="campaigns_loaded">Loaded %d campaigns</string>
+    <string name="my_campaigns">My Campaigns</string>
+    <string name="loading_campaigns">Loading campaigns…</string>
+    <string name="create_new_campaign">Create New Campaign</string>
+    <string name="campaign_name">Campaign Name</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="create_campaign">Create Campaign</string>
 </resources>
