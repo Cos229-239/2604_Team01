@@ -51,9 +51,15 @@
     "p_footer": true
   },
   "branches": {
-    "main": false,
-    "gh-pages": false,
-    "ChristopherBivins-Personal": true
+    "main": true,
+    "gh-pages": true,
+    "ChristopherBivins-Personal": true,
+    "dev": true,
+    "JacobWalters-personal": true,
+    "JeremiahGeigenmiller-personal": true,
+    "JosephDavis-Personal": true,
+    "MalikGeorge-personal": true,
+    "PatrickPersonal": true
   },
   "version": 1
 }
