@@ -51,15 +51,37 @@
     "p_footer": true
   },
   "branches": {
-    "main": true,
-    "gh-pages": true,
+    "main": false,
+    "gh-pages": false,
     "ChristopherBivins-Personal": true,
     "dev": true,
     "JacobWalters-personal": true,
     "JeremiahGeigenmiller-personal": true,
     "JosephDavis-Personal": true,
     "MalikGeorge-personal": true,
-    "PatrickPersonal": true
+    "PatrickPersonal": false
+  },
+  "nightly_branches": {
+    "main": false,
+    "gh-pages": false,
+    "ChristopherBivins-Personal": true,
+    "dev": false,
+    "JacobWalters-personal": true,
+    "JeremiahGeigenmiller-personal": true,
+    "JosephDavis-Personal": true,
+    "MalikGeorge-personal": true,
+    "PatrickPersonal": false
+  },
+  "weekly_branches": {
+    "main": false,
+    "gh-pages": false,
+    "ChristopherBivins-Personal": true,
+    "dev": false,
+    "JacobWalters-personal": true,
+    "JeremiahGeigenmiller-personal": true,
+    "JosephDavis-Personal": true,
+    "MalikGeorge-personal": true,
+    "PatrickPersonal": false
   },
   "version": 1
 }
