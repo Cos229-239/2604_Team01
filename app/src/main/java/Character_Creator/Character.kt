@@ -1,7 +1,7 @@
 package Character_Creator
 
 import model.Race
-import team01_application.CharacterClass
+import com.example.team01_application.*
 
 enum class Ability_Score {
     STR, DEX, CON, INT, WIS, CHA

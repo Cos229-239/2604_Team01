@@ -13,6 +13,4 @@ class CharacterCreation_Fragment : Fragment( R.layout.fragment_character_creatio
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     { super.onViewCreated(view, savedInstanceState) }
 
-
-
 }

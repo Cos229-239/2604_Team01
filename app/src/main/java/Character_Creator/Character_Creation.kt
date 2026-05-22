@@ -4,13 +4,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.LiveData
 import kotlinx.coroutines.flow.*
-import model.RaceRepository.raceList
-import team01_application.CharacterClasses.allClasses
+import model.RaceRepository
+import com.example.team01_application.*
+
+val raceInst = RaceRepository()
 
 class Character_Creation(
-    private val race_Repo: raceList,
+
+    private val race_Repo: raceInst.raceList,
     private val class_Repo: allClasses,
     private val item_Repo: Item_Repository
+
 ) : ViewModel() {
 
     // ---- The Character that is being created ------
