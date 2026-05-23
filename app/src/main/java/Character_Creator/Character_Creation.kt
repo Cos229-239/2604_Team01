@@ -5,13 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.LiveData
 import kotlinx.coroutines.flow.*
 import model.RaceRepository
-import team01_application.CharacterClasses.allClasses
+import com.example.team01_application.*
 
-class Character_Creation(
-    private val race_Repo: RaceRepository,
-    private val class_Repo: allClasses,
-    private val item_Repo: Item_Repository
-) : ViewModel() {
+val raceInst = RaceRepository()
+
+class Character_Creation() : ViewModel() {
 
     // ---- The Character that is being created ------
     private val _character = MutableStateFlow( Character(ch_Name = null, ch_Race = null, ch_Class = null))
