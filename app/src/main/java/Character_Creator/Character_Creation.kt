@@ -9,13 +9,7 @@ import com.example.team01_application.*
 
 val raceInst = RaceRepository()
 
-class Character_Creation(
-
-    private val race_Repo: raceInst.raceList,
-    private val class_Repo: allClasses,
-    private val item_Repo: Item_Repository
-
-) : ViewModel() {
+class Character_Creation() : ViewModel() {
 
     // ---- The Character that is being created ------
     private val _character = MutableStateFlow( Character(ch_Name = null, ch_Race = null, ch_Class = null))

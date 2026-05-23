@@ -4,7 +4,7 @@ import model.Race
 import com.example.team01_application.*
 
 enum class Ability_Score {
-    STR, DEX, CON, INT, WIS, CHA
+    STRENGTH, DEXTERITY, CONSTITUTION, INTELLIGENCE, WISDOM, CHARISMA
 }
 
 class Character {

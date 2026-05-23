@@ -1,83 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="375dp"
-        android:layout_height="31dp"
-        android:text="Create a Character"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="97dp"
-        android:layout_height="42dp"
-        android:text="Race"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="60dp" />
+        <!-- Typing in the Name -->
+        <EditText
+            android:id="@+id/editName"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="97dp"
-        android:layout_height="42dp"
-        android:text="Class"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="222dp" />
+        <!-- Pick a Race -->
+        <Spinner
+            android:id="@+id/spinnerRace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_race" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="STR"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="462dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="CON"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="462dp" />
+        <!-- Pick a Class -->
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_class"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="DEX"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="462dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="WIS"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="560dp" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="CHA"
-        tools:layout_editor_absoluteX="196dp"
-        tools:layout_editor_absoluteY="560dp" />
+        <!-- Ability Scores Start -->
+        <TextView
+            android:text="Ability Scores"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:text="INT"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="560dp" />
+        <!-- RecycleView for the creation of the 6 ability scores -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerAbilityScores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <!-- Create the Character -->
+        <Button
+            android:id="@+id/btnCreate"
+            android:text="Create Character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
