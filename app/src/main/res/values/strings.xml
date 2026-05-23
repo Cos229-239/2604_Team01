@@ -12,4 +12,6 @@
     <string name="campaign_name">Campaign Name</string>
     <string name="description_optional">Description (optional)</string>
     <string name="create_campaign">Create Campaign</string>
+    <string name="select_race">select_race</string>
+    <string name="select_class">select_class</string>
 </resources>
