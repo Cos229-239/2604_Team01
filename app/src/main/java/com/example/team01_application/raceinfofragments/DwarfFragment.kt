@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import model.RaceRepository
 
-class DwarfFragment : Fragment(R.layout.fragment_dwarf) {
+class DwarfFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
