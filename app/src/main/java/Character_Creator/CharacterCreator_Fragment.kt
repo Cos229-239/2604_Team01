@@ -16,7 +16,7 @@ import com.example.team01_application.*
 
 class CharacterCreation_Fragment : Fragment() {
 
-    private lateinit var binding: fragment_character_creator_Binding
+    private lateinit var binding: fragment_character_creationBinding
 
     private val viewModel: Character_Creator_ViewModel by viewModels()
 
@@ -25,7 +25,7 @@ class CharacterCreation_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate using View Binding.
-        binding = fragment_character_creator_Binding.inflate(inflater, container, false)
+        binding = fragment_character_creationBinding.inflate(inflater, container, false)
         return binding.root
     }
 
