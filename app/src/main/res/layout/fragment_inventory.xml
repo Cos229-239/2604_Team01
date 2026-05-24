@@ -6,17 +6,23 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/tvClassName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Starting Inventory"
+        android:text="Inventory"
         android:textSize="22sp"
         android:textStyle="bold"
         android:paddingBottom="12dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvInventory"
+        android:id="@+id/rv_inventory"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"/>
 
 </LinearLayout>
