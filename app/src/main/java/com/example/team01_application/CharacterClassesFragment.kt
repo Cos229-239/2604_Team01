@@ -4,8 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class CharacterClassesFragment : Fragment() {
 
@@ -21,11 +22,10 @@ class CharacterClassesFragment : Fragment() {
             false
         )
 
-        val classText = allClasses.joinToString("\n\n") {
-            "${it.name}\n${it.description}"
-        }
+        val recyclerView = view.findViewById<RecyclerView>(R.id.classRecyclerView)
 
-        view.findViewById<TextView>(R.id.classTextView).text = classText
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = CharacterClassAdapter(allClasses)
 
         return view
     }
