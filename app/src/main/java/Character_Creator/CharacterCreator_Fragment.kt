@@ -13,10 +13,11 @@ import Character_Creator.ViewModel.Character_Creator_ViewModel
 import com.example.team01_application.R
 import model.RaceRepository
 import com.example.team01_application.*
+import res.
 
 class CharacterCreation_Fragment : Fragment() {
 
-    private lateinit var binding: fragment_character_creationBinding
+    private lateinit var binding: fragment_character_creation
 
     private val viewModel: Character_Creator_ViewModel by viewModels()
 
