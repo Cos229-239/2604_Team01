@@ -27,10 +27,10 @@ class RaceInfoMenuFragment : Fragment() {
         val elfFragment = ElfFragment()
         val dragonFragment = DragonFragment()
 
-        val btnHumanFragment = view.findViewById<Button>(R.id.btnHumanFragment)
-        val btnDwarfFragment = view.findViewById<Button>(R.id.btnDwarfFragment)
-        val btnElfFragment = view.findViewById<Button>(R.id.btnElfFragment)
-        val btnDragonFragment = view.findViewById<Button>(R.id.btnDragonFragment)
+        val btnHumanFragment = view.findViewById<Button>(R.id.HumanImageBtn)
+        val btnDwarfFragment = view.findViewById<Button>(R.id.DwarfImageBtn)
+        val btnElfFragment = view.findViewById<Button>(R.id.ElfImageBtn)
+        val btnDragonFragment = view.findViewById<Button>(R.id.DragonImageBtn)
 
 
         // on click listeners
@@ -38,28 +38,28 @@ class RaceInfoMenuFragment : Fragment() {
 
         btnHumanFragment.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flRaceMenuFragment, humanFragment)
+                replace(R.id.placeholder, humanFragment)
                 commit()
             }
         }
 
         btnDwarfFragment.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flRaceMenuFragment, dwarfFragment)
+                replace(R.id.placeholder, dwarfFragment)
                 commit()
             }
         }
 
         btnElfFragment.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flRaceMenuFragment, elfFragment)
+                replace(R.id.placeholder, elfFragment)
                 commit()
             }
         }
 
         btnDragonFragment.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flRaceMenuFragment, dragonFragment)
+                replace(R.id.placeholder, dragonFragment)
                 commit()
             }
         }

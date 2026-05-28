@@ -2,74 +2,111 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/raceMenuFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".raceinfofragments.RaceInfoMenuFragment">
 
 
+    <ImageButton
+        android:id="@+id/ElfImageBtn"
+        android:layout_width="192dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/elf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/HumanImageBtn"
+        android:layout_width="192dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/human"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvRaceMenuFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Race Info"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Choose a Race"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/flRaceMenuFragment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/flRaceMenuFragment"
-        android:layout_width="410dp"
-        android:layout_height="595dp"
+    <ImageButton
+        android:id="@+id/DwarfImageBtn"
+        android:layout_width="192dp"
+        android:layout_height="201dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dwarf"
+        app:layout_constraintEnd_toStartOf="@+id/DragonImageBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DragonImageBtn" />
+
+    <ImageButton
+        android:id="@+id/DragonImageBtn"
+        android:layout_width="192dp"
+        android:layout_height="201dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="140dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dragon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnDwarfFragment"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="84dp"
-        android:text="Dwarf"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnHumanFragment"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
+    <TextView
+        android:id="@+id/tvHuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
         android:text="Human"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/HumanImageBtn"
+        app:layout_constraintStart_toStartOf="@+id/HumanImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/HumanImageBtn" />
 
-    <Button
-        android:id="@+id/btnElfFragment"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="88dp"
+    <TextView
+        android:id="@+id/tvDwarf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Dwarf"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/DwarfImageBtn"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/DwarfImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/DwarfImageBtn" />
+
+    <TextView
+        android:id="@+id/tvElf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
         android:text="Elf"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/ElfImageBtn"
+        app:layout_constraintStart_toStartOf="@+id/ElfImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ElfImageBtn" />
 
-    <Button
-        android:id="@+id/btnDragonFragment"
-        android:textSize="11sp"
-        android:layout_width="122dp"
+    <TextView
+        android:id="@+id/tvDragon"
+        android:layout_width="164dp"
         android:layout_height="47dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="84dp"
+        android:fontFamily="sans-serif-condensed"
         android:text="Dragonborn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/DragonImageBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/DragonImageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/DragonImageBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
