@@ -13,11 +13,11 @@ import Character_Creator.ViewModel.Character_Creator_ViewModel
 import com.example.team01_application.R
 import model.RaceRepository
 import com.example.team01_application.*
-import res.
+import com.example.team01_application.databinding.FragmentCharacterCreationBinding
 
 class CharacterCreation_Fragment : Fragment() {
 
-    private lateinit var binding: fragment_character_creation
+    private lateinit var binding: FragmentCharacterCreationBinding
 
     private val viewModel: Character_Creator_ViewModel by viewModels()
 
@@ -26,7 +26,7 @@ class CharacterCreation_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate using View Binding.
-        binding = fragment_character_creationBinding.inflate(inflater, container, false)
+        binding = FragmentCharacterCreationBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -36,7 +36,7 @@ class CharacterCreation_Fragment : Fragment() {
         // 3️⃣a  Set up the Race spinner.
         val raceAdapter = ArrayAdapter(requireContext(),
             android.R.layout.simple_spinner_item,
-            model.RaceRepository.companion.raceList)
+            model.RaceRepository.raceList)
         raceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerRace.adapter = raceAdapter
 
@@ -48,14 +48,14 @@ class CharacterCreation_Fragment : Fragment() {
         binding.spinnerClass.adapter = classAdapter
 
         // 3️⃣c  Set up the RecyclerView.
-        binding.recyclerViewAbilities.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerAbilityScores.layoutManager = LinearLayoutManager(requireContext())
         val adapter = Ability_Score_Adapter(viewModel.scores)
-        binding.recyclerViewAbilities.adapter = adapter
+        binding.recyclerAbilityScores.adapter = adapter
 
         // 3️⃣d  When the user presses Create.
-        binding.buttonCreate.setOnClickListener {
+        binding.btnCreate.setOnClickListener {
             // Grab the name the user typed.
-            val name = binding.editTextName.text.toString().trim()
+            val name = binding.editName.text.toString().trim()
 
             // If no name, show a message.
             if (name.isEmpty()) {
