@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Team01_Application</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_player_to_campaign">Add Player to Campaign</string>
+    <string name="username_or_user_id">Username or User ID</string>
+    <string name="add_player">Add Player</string>
+    <string name="cancel">Cancel</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_friends">My Friends</string>
     <string name="loading_friends">Loading friends…</string>
