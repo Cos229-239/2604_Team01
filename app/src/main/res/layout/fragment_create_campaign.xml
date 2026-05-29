@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <!-- Main title for the Create Campaign screen -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +17,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="32dp"/>
 
-    <!-- Campaign Name -->
+    <!-- Input field for campaign name -->
     <EditText
         android:id="@+id/et_campaign_name"
         android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
         android:minHeight="56dp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Description -->
+    <!-- Input field for campaign description -->
     <EditText
         android:id="@+id/et_description"
         android:layout_width="wrap_content"
@@ -46,7 +47,7 @@
         android:minHeight="120dp"
         android:layout_marginBottom="32dp"/>
 
-    <!-- Create Button -->
+    <!-- Button to create the campaign -->
     <Button
         android:id="@+id/btn_create_campaign"
         android:layout_width="wrap_content"
