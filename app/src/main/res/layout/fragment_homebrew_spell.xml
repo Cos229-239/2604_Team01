@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSpellCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Spell"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopof="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSpellName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Give your Spell a Name: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvSpellCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etSpellName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@id/tvSpellName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvSpellName"
+        app:layout_constraintBottom_toBottomOf="@id/tvSpellName"
+        android:layout_marginStart="8dp"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/etSpellDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Write a description here."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvSpellName"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
