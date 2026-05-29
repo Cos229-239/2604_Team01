@@ -6,7 +6,8 @@ data class CharacterClass (
     val primaryAbility: String,
     val savingThrows: List<String>,
     val weaponProficiencies: List<String>,
-    val description: String
+    val description: String,
+    val imageResId: Int
 )
 
 val barbarian = CharacterClass(
@@ -15,7 +16,8 @@ val barbarian = CharacterClass(
     primaryAbility = "Strength",
     savingThrows = listOf("Strength", "Constitution"),
     weaponProficiencies = listOf("Simple Weapons", "Martial Weapons") ,
-    description = "A fierce melee warrior who uses rage and brute strength to overpower enemies."
+    description = "A fierce melee warrior who uses rage and brute strength to overpower enemies.",
+    imageResId = R.drawable.barbarian_icon
 )
 
 val bard = CharacterClass(
@@ -24,7 +26,8 @@ val bard = CharacterClass(
     primaryAbility = "Charisma",
     savingThrows = listOf("Dexterity", "Charisma"),
     weaponProficiencies = listOf("Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"),
-    description = "A charismatic performer who uses music, magic, and inspiration to support allies."
+    description = "A charismatic performer who uses music, magic, and inspiration to support allies.",
+    imageResId = R.drawable.bard_icon
 )
 
 val cleric = CharacterClass(
@@ -33,7 +36,8 @@ val cleric = CharacterClass(
     primaryAbility = "Wisdom",
     savingThrows = listOf("Wisdom", "Charisma"),
     weaponProficiencies = listOf("Simple Weapons"),
-    description = "A divine spellcaster who heals allies and channels the power of their deity."
+    description = "A divine spellcaster who heals allies and channels the power of their deity.",
+    imageResId = R.drawable.cleric_icon
 )
 
 val druid = CharacterClass(
@@ -42,7 +46,8 @@ val druid = CharacterClass(
     primaryAbility = "Wisdom",
     savingThrows = listOf("Intelligence", "Wisdom"),
     weaponProficiencies = listOf("Clubs", "Daggers", "Darts", "Javelins", "Maces", "Quarterstaffs", "Scimitars", "Sickles", "Slings", "Spears"),
-    description = "A nature-based spellcaster who can wield elemental magic and transform into animals."
+    description = "A nature-based spellcaster who can wield elemental magic and transform into animals.",
+    imageResId = R.drawable.druid_icon
 )
 
 val fighter = CharacterClass(
@@ -51,7 +56,8 @@ val fighter = CharacterClass(
     primaryAbility = "Strength/Dexterity",
     savingThrows = listOf("Strength" , "Constitution"),
     weaponProficiencies = listOf("Simple Weapons", "Martial Weapons"),
-    description = "A skilled combat specialist who excels with weapons, armor, and battlefield tactics."
+    description = "A skilled combat specialist who excels with weapons, armor, and battlefield tactics.",
+    imageResId = R.drawable.fighter_icon
 )
 
 val paladin = CharacterClass(
@@ -60,7 +66,8 @@ val paladin = CharacterClass(
     primaryAbility = "Strength/Charisma/Wisdom",
     savingThrows = listOf("Wisdom","Strength","Charisma"),
     weaponProficiencies = listOf("Simple Weapons", "Martial Weapons"),
-    description = "A holy warrior who combines powerful melee combat with divine magic and protection."
+    description = "A holy warrior who combines powerful melee combat with divine magic and protection.",
+    imageResId = R.drawable.paladin_icon
 )
 
 val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)

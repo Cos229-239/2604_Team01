@@ -9,11 +9,12 @@ import androidx.fragment.app.Fragment
 import com.example.team01_application.R
 import com.example.team01_application.model.FriendManager
 
-// Fragment to show the user's friends list
+// Fragment that displays the user's friends list
 class FriendsFragment : Fragment() {
 
     private val friendManager = FriendManager()
 
+    // Inflates the layout for this fragment
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,6 +23,7 @@ class FriendsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_friends_list, container, false)
     }
 
+    // Called after the view is created - good place to setup UI and load data
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -29,6 +31,7 @@ class FriendsFragment : Fragment() {
         loadFriends(statusText)
     }
 
+    // Loads the user's friends and updates the status text
     private fun loadFriends(statusText: TextView) {
         val currentUserId = "current_user_placeholder"
 
