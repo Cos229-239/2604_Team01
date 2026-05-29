@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <!-- Dialog Title -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Input field for player username or ID -->
     <EditText
         android:id="@+id/et_player_username"
         android:layout_width="wrap_content"
@@ -28,6 +30,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Action Buttons (Cancel + Add) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

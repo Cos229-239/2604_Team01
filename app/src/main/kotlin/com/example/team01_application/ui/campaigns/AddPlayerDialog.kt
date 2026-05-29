@@ -11,13 +11,15 @@ import androidx.fragment.app.DialogFragment
 import com.example.team01_application.R
 import com.example.team01_application.model.CampaignManager
 
+// Dialog that allows a DM to add a player to a specific campaign
 class AddPlayerDialog(
-    private val campaignId: String,
-    private val onPlayerAdded: () -> Unit
+    private val campaignId: String,           // ID of the campaign we're adding to
+    private val onPlayerAdded: () -> Unit     // Callback when player is successfully added
 ) : DialogFragment() {
 
     private val campaignManager = CampaignManager()
 
+    // Inflates the dialog layout
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,6 +28,7 @@ class AddPlayerDialog(
         return inflater.inflate(R.layout.dialog_add_player, container, false)
     }
 
+    // Sets up button listeners after the view is created
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -33,6 +36,7 @@ class AddPlayerDialog(
         val btnAdd = view.findViewById<Button>(R.id.btn_add_player)
         val btnCancel = view.findViewById<Button>(R.id.btn_cancel)
 
+        // Handle "Add Player" button click
         btnAdd.setOnClickListener {
             val usernameOrId = etPlayerUsername.text.toString().trim()
 
@@ -53,11 +57,13 @@ class AddPlayerDialog(
             }
         }
 
+        // Handle "Cancel" button click
         btnCancel.setOnClickListener {
             dismiss()
         }
     }
 
+    // Makes the dialog a nice size (85% of screen width)
     override fun onStart() {
         super.onStart()
         dialog?.window?.setLayout(

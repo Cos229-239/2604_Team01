@@ -1,9 +1,12 @@
 package com.example.team01_application.model
 
+// Manages all campaign-related operations (create, add players, retrieve, etc.)
 class CampaignManager {
 
+    // In-memory list of campaigns (will be replaced with Firebase later)
     private val campaigns = mutableListOf<Campaign>()
 
+    // Creates a new campaign (used by Dungeon Master)
     fun createCampaign(dmUserId: String, campaignName: String, description: String = ""): Campaign {
         val campaign = Campaign(
             campaignId = "camp_${System.currentTimeMillis()}",
@@ -16,6 +19,7 @@ class CampaignManager {
         return campaign
     }
 
+    // Adds a player to an existing campaign
     fun addPlayerToCampaign(campaignId: String, playerUserId: String): Boolean {
         val campaign = campaigns.find { it.campaignId == campaignId } ?: return false
         campaign.addPlayer(playerUserId)
@@ -23,16 +27,19 @@ class CampaignManager {
         return true
     }
 
+    // Returns all campaigns a user is part of (as DM or as a player)
     fun getMyCampaigns(userId: String): List<Campaign> {
         return campaigns.filter {
             it.dmUserId == userId || it.playerUserIds.contains(userId)
         }
     }
 
+    // Get a specific campaign by its ID
     fun getCampaignById(campaignId: String): Campaign? {
         return campaigns.find { it.campaignId == campaignId }
     }
 
+    // Removes a player from a campaign (DM only)
     fun removePlayerFromCampaign(campaignId: String, playerUserId: String): Boolean {
         val campaign = campaigns.find { it.campaignId == campaignId } ?: return false
         campaign.removePlayer(playerUserId)
