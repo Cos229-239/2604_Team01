@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Changed from constraint for scrolling on a digital device -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Additional layout for the easy stacking of objects on top of one another -->
     <LinearLayout
         android:orientation="vertical"
         android:padding="16dp"
@@ -16,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- Pick a Race -->
+        <!-- Pick a Race  with drop down-->
         <Spinner
             android:id="@+id/spinnerRace"
             android:layout_width="match_parent"
@@ -27,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="16dp"/>
 
-        <!-- Pick a Class -->
+        <!-- Pick a Class with drop down-->
         <Spinner
             android:id="@+id/spinnerClass"
             android:layout_width="match_parent"
@@ -39,7 +41,7 @@
             android:layout_height="16dp"/>
 
 
-        <!-- Ability Scores Start -->
+        <!-- Ability Scores text view-->
         <TextView
             android:text="Ability Scores"
             android:textSize="18sp"
@@ -52,6 +54,7 @@
             android:id="@+id/recyclerAbilityScores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <!-- This is where the button to randomly roll a score would go -->
 
         <Space
             android:layout_width="match_parent"

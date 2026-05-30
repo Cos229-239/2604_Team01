@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     android:padding="16dp">
 
+    <!-- Main Title -->
     <TextView
         android:id="@+id/tvSpellCreate"
         android:layout_width="wrap_content"
@@ -20,6 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="HardcodedText,MissingConstraints" />
 
+    <!-- Text View for the name -->
     <TextView
         android:id="@+id/tvSpellName"
         android:layout_width="0dp"
@@ -32,6 +34,7 @@
         android:layout_marginTop="12dp"
         tools:ignore="HardcodedText" />
 
+    <!-- Fill in the name in this text editor -->
     <EditText
         android:id="@+id/etSpellName"
         android:layout_width="0dp"
@@ -45,6 +48,7 @@
         android:layout_marginStart="8dp"
         tools:ignore="Autofill,LabelFor" />
 
+    <!-- Text Editor for general description -->
     <EditText
         android:id="@+id/etSpellDesc"
         android:layout_width="wrap_content"
@@ -53,8 +57,5 @@
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tvSpellName"
         tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,16 +6,20 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
+    <!-- Text View that will display the ability score that is represented -->
     <TextView
         android:id="@+id/tvAbility"
         android:layout_weight="1"
         android:layout_width="1dp"
         android:layout_height="wrap_content"/>
 
+    <!-- Text Editor to input a number for the ability scores -->
     <EditText
         android:id="@+id/etScore"
         android:inputType="number"
         android:layout_width="80dp"
         android:layout_height="wrap_content"/>
+    <!-- It would be a good idea to add constraints to this input for just ints
+    and no strings. A simple check should suffice -->
 
 </LinearLayout>

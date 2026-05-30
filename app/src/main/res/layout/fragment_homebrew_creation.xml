@@ -8,15 +8,18 @@
     android:gravity="center"
     android:padding="16dp">
 
+    <!-- Main Title -->
     <TextView
         android:id="@+id/mainTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Homebrew Creation"
+        android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
         android:fontFamily="sans-serif-black" />
 
+    <!-- General button creation -->
     <Button
         android:id="@+id/CreateRace"
         android:layout_width="match_parent"

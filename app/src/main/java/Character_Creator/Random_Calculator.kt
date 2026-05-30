@@ -21,6 +21,8 @@ object Random_Calculator {
     fun <T> pick_Random(list: List<T>): T = list[rng.nextInt(list.size)]
 
     // --------------- Picking Random race and class ------------------------
+    // For some reason this didn't want to call the lists from the repos. I think it has something to
+    // do with the format, but I am not sure.
     fun pick_Random_Race( races: raceList): Race = pick_Random(races)
     fun pick_Random_Cladd( classes: allClasses): CharacterClass = pick_Random(classes)
 
