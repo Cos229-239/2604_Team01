@@ -1,4 +1,21 @@
 package com.example.team01_application
+/**
+ * Represents a playable Dungeons & Dragons character class.
+ *
+ * Stores class information used throughout the application,
+ * including gameplay statistics, descriptions, and icon resources.
+ * Icons for classes can be found at Main->res->drawable. All icons have been named to match their class
+ *
+ *  FUTURE DEVELOPMENT NOTES
+ *
+ *  Planned Features:
+ *  - Clickable class entries
+ *  - Expandable class descriptions
+ *  - Character creation integration
+ *  - Inventory/equipment system integration
+ *  - Additional D&D classes
+ */
+
 
 data class CharacterClass (
     val name: String,
@@ -69,6 +86,18 @@ val paladin = CharacterClass(
     description = "A holy warrior who combines powerful melee combat with divine magic and protection.",
     imageResId = R.drawable.paladin_icon
 )
+
+/**
+ * Master list of all currently implemented character classes.
+ *
+ * To add a new class:
+ * 1. Create a new CharacterClass object.
+ * 2. Add an icon to the drawable folder.
+ * 3. Add the class to this list.
+ *
+ * RecyclerView updates automatically when new entries are added.
+ */
+
 
 val allClasses = listOf( barbarian, bard, cleric, druid, fighter, paladin)
 

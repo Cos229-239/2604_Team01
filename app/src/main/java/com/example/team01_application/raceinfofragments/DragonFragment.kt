@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import model.RaceRepository
 
-
+// fragment to display dragonborn's info
 class DragonFragment : Fragment() {
 
     override fun onCreateView(

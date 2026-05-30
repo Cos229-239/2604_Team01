@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import model.RaceRepository
 
+
+// fragment to display elf's info
 class ElfFragment : Fragment() {
 
     override fun onCreateView(

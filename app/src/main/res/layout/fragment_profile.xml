@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,18 +18,11 @@
             android:paddingBottom="24dp"/>
 
         <TextView
+            android:id="@+id/tvUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
-            android:textSize="12sp"
-            android:textColor="#888888"/>
-
-        <EditText
-            android:id="@+id/etUsername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter username"
-            android:inputType="text"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:paddingBottom="16dp"/>
 
         <TextView
@@ -63,6 +55,32 @@
             android:inputType="textMultiLine"
             android:minLines="3"
             android:gravity="top"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D&amp;D Version"
+            android:textSize="12sp"
+            android:textColor="#888888"/>
+
+        <Spinner
+            android:id="@+id/spinnerDndVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Recommended Classes"
+            android:textSize="14sp"
+            android:paddingBottom="4dp"/>
+
+        <Switch
+            android:id="@+id/switchRecommendedClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:paddingBottom="24dp"/>
 
         <Button
@@ -70,15 +88,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save Changes"/>
-
-        <TextView
-            android:id="@+id/tvSaveConfirmation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#4CAF50"
-            android:gravity="center"
-            android:paddingTop="8dp"/>
 
     </LinearLayout>
 </ScrollView>

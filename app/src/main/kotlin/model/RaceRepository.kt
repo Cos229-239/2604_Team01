@@ -1,5 +1,7 @@
 package model
 
+
+//all race descriptions and related info
 class RaceRepository {
 
     // elf
@@ -107,7 +109,7 @@ class RaceRepository {
         background = humanBackground,
         traits = humanTraits)
 
-// race list
+// race lists, maps, and functions to access data
 
     val raceList = listOf(elfRace, dwarfRace, dragonBornRace, humanRace)
 
