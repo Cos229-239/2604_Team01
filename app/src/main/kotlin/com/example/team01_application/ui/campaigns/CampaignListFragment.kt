@@ -9,11 +9,12 @@ import androidx.fragment.app.Fragment
 import com.example.team01_application.R
 import com.example.team01_application.model.CampaignManager
 
-// Simple Fragment to show campaigns
+// Fragment that displays the list of campaigns the user is part of (as DM or player)
 class CampaignListFragment : Fragment() {
 
     private val campaignManager = CampaignManager()
 
+    // Inflates the layout for this fragment
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,6 +23,7 @@ class CampaignListFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_campaign_list, container, false)
     }
 
+    // Called after the view is created - good place to setup UI and load data
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -29,6 +31,7 @@ class CampaignListFragment : Fragment() {
         loadCampaigns(statusText)
     }
 
+    // Loads the user's campaigns and updates the UI
     private fun loadCampaigns(statusText: TextView) {
         val currentUserId = "current_user_placeholder" // TODO: Replace later with real user ID
 

@@ -4,6 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CharacterClassesFragment">
+    <!--
+          Main RecyclerView used to display all available character classes.
+
+          Data is provided by CharacterClassAdapter and populated from
+          the allClasses list in CharacterClass.kt.
+      -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/classRecyclerView"

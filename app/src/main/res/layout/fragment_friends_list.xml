@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Main title for the Friends screen -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,6 +14,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Status text that shows loading message or number of friends -->
     <TextView
         android:id="@+id/tv_friends_status"
         android:layout_width="match_parent"

@@ -1,8 +1,9 @@
 package com.example.team01_application.model
 
+// Main data class representing a DnD Campaign
 data class Campaign(
     val campaignId: String = "",
-    val dmUserId: String = "",
+    val dmUserId: String = "",           // Uses User's "id"
     val campaignName: String = "",
     val description: String = "",
     val worldSetting: String? = null,
