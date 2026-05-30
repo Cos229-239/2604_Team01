@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import model.RaceRepository
 
+
+// fragment to display human's info
 class HumanFragment : Fragment() {
 
     override fun onCreateView(

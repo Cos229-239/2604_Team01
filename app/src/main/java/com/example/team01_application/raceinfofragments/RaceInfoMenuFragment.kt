@@ -27,6 +27,7 @@ class RaceInfoMenuFragment : Fragment() {
         val elfFragment = ElfFragment()
         val dragonFragment = DragonFragment()
 
+        // image buttons for each race
         val btnHumanFragment = view.findViewById<Button>(R.id.HumanImageBtn)
         val btnDwarfFragment = view.findViewById<Button>(R.id.DwarfImageBtn)
         val btnElfFragment = view.findViewById<Button>(R.id.ElfImageBtn)
@@ -34,7 +35,7 @@ class RaceInfoMenuFragment : Fragment() {
 
 
         // on click listeners
-        // using my own frame layout to swap fragments, when we have a main activity I will swap
+        // using placeholders for the primary container, when we have a main activity you can swap
 
         btnHumanFragment.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
