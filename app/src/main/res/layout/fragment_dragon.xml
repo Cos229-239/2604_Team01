@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".HumanFragment">
 
+    <!--
+    dragonborn race info
+    -->
+
     <ImageButton
         android:id="@+id/ibDragonBack"
         android:layout_width="81dp"

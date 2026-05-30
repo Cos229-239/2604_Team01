@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".HumanFragment">
 
+
+    <!--
+    human race info
+    -->
+
     <ImageButton
         android:id="@+id/ibHumanBack"
         android:layout_width="81dp"

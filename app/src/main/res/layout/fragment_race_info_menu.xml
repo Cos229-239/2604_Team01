@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".raceinfofragments.RaceInfoMenuFragment">
 
+    <!--
+    main race menu screen
+    -->
 
     <ImageButton
         android:id="@+id/ElfImageBtn"

@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".HumanFragment">
 
+    <!--
+    dwarf race info
+    -->
+
     <ImageButton
         android:id="@+id/ibDwarfBack"
         android:layout_width="81dp"
